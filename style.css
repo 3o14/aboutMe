@@ -25,7 +25,7 @@ body {
   font-weight: 900;
 }
 
-.section {
+/* .section {
   border-radius: 50px;
   background: linear-gradient(145deg, #f0f0f0, #cacaca);
   box-shadow: 20px 20px 60px #bebebe;
@@ -36,9 +36,9 @@ body {
   flex-direction: column;
   align-items: center;
   padding-bottom: 2rem;
-}
+} */
 
-.section:hover {
+.section {
   margin-right: 2rem;
   min-width: 19rem;
   display: flex;
@@ -49,6 +49,35 @@ body {
   box-shadow: 20px 20px 60px #bebebe;
   padding-bottom: 2rem;
 }
+
+.parent {
+  position: relative;
+
+}
+
+.hide {
+  border-radius: 50px;
+  background: linear-gradient(145deg, #f0f0f0, #cacaca);
+  box-shadow: 20px 20px 60px #bebebe;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+
+  opacity: 1;
+    transition: 0.3s;
+}
+
+.hide:hover {
+  display: none;
+  opacity: 0;
+}
+
+.button {
+  margin: auto;
+  font-size: 2rem;
+  font-weight: normal;
+}
+
 
 #wonju {
   width: 100%;
