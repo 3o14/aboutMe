@@ -25,22 +25,10 @@ body {
   font-weight: 900;
 }
 
-/* .section {
-  border-radius: 50px;
-  background: linear-gradient(145deg, #f0f0f0, #cacaca);
-  box-shadow: 20px 20px 60px #bebebe;
-
-  margin-right: 2rem;
-  min-width: 19rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-bottom: 2rem;
-} */
-
 .section {
   margin-right: 2rem;
   min-width: 19rem;
+  min-height: 605px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -64,20 +52,32 @@ body {
   bottom: 0px;
 
   opacity: 1;
-    transition: 0.3s;
+  transition: 0.3s;
 }
 
 .hide:hover {
-  display: none;
+  /* display: none; */
   opacity: 0;
 }
 
 .button {
   margin: auto;
-  font-size: 2rem;
+  font-size: 1.4rem;
   font-weight: normal;
 }
 
+.hide:hover .button {
+  animation: move-title 3s linear forwards;
+}
+
+@keyframes move-title {
+  from {
+		transform: translate(0, 0);
+	}
+	to {
+		transform: translate(0px, -800%);
+	}
+}
 
 #wonju {
   width: 100%;
@@ -99,10 +99,7 @@ body {
 .list {
   list-style-type: none;
 }
-/* 
-.img {
-    visibility: hidden;
+
+li {
+  line-height: 2rem;
 }
-.img:hover {
-    visibility: none;
-} */
